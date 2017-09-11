@@ -1,0 +1,13 @@
+def filter_list(l):
+    itemList = list(l)
+    print(itemList)
+    for item in itemList:
+        if type(item) is str:
+            print("the item is:" + item)
+            itemList.remove(item)
+            print(itemList)
+        else:
+            print("the item is: %d" % (item))
+    print(itemList)
+    return
+filter_list([1, 2, 'z', 3, 'b', 'w', 'd', 'c'])
